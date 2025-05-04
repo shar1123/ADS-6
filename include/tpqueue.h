@@ -8,7 +8,7 @@ class TPQueue {
   struct Item {
     T data;
     Item* next;
-    Item(const T& value) : data(value), next(nullptr) {}
+    explicit Item(const T& value) : data(value), next(nullptr) {}
   };
   Item* head;
 
